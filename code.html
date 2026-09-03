@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#f0eee8", "secondary-fixed": "#ffddb7", "secondary": "#83540b", "surface-tint": "#48645c", "on-primary-fixed": "#04201a", "primary-fixed-dim": "#afcdc3", "on-tertiary-fixed-variant": "#5e4200", "secondary-container": "#fdbd6e", "inverse-on-surface": "#f3f0ea", "error": "#ba1a1a", "primary": "#07231d", "on-error-container": "#93000a", "on-error": "#ffffff", "outline": "#727975", "surface-container-highest": "#e5e2dc", "on-tertiary-fixed": "#271900", "caramel-roast": "#b37d34", "surface-bright": "#fcf9f3", "inverse-primary": "#afcdc3", "latte-amber": "#cba258", "primary-fixed": "#cbe9df", "on-surface": "#1c1c18", "on-secondary": "#ffffff", "on-background": "#1c1c18", "on-tertiary-container": "#be964d", "surface-container-low": "#f6f3ed", "tertiary-container": "#463000", "text-warm-espresso": "rgba(27,38,29,0.88)", "cream-canvas": "#f9f6f0", "surface-variant": "#e5e2dc", "error-container": "#ffdad6", "ceramic-surface": "#edebe9", "on-surface-variant": "#414846", "surface": "#fcf9f3", "tertiary-fixed-dim": "#ecc073", "on-secondary-fixed-variant": "#653e00", "surface-container-high": "#ebe8e2", "surface-dim": "#dcdad4", "inverse-surface": "#31312d", "tertiary": "#2b1c00", "outline-variant": "#c1c8c4", "on-primary": "#ffffff", "on-secondary-container": "#774a00", "secondary-fixed-dim": "#fabb6b", "on-secondary-fixed": "#2a1700", "on-tertiary": "#ffffff", "espresso-rich": "#1E3932", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffdea8", "on-primary-container": "#86a399", "on-primary-fixed-variant": "#314c44", "primary-container": "#1e3932", "background": "#fcf9f3", "espresso-deep": "#1b261d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "space-sm": "0.75rem", "container-max": "1200px", "space-lg": "1.5rem", "space-2xl": "3rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-xxs": "0.25rem", "space-md": "1rem", "space-3xl": "4rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-md": [ "Playfair Display", "serif" ], "body-lg": [ "Inter", "sans-serif" ], "display-lg": [ "Playfair Display", "serif" ], "display-lg-mobile": [ "Playfair Display", "serif" ], "body-sm": [ "Inter", "sans-serif" ], "headline-lg": [ "Playfair Display", "serif" ], "headline-lg-mobile": [ "Playfair Display", "serif" ], "label-sm": [ "Inter", "sans-serif" ], "label-lg": [ "Inter", "sans-serif" ], "label-md": [ "Inter", "sans-serif" ], "headline-sm": [ "Playfair Display", "serif" ], "body-md": [ "Inter", "sans-serif" ] }, "fontSize": { "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "500" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-ceramic-surface shadow-[0_4px_20px_-2px_rgba(27,38,29,0.06)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="our-roastery" href="#"><img alt="Cafe o Late Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WngKbrmnoc9W_KgCN3EkLd7FzH3roHfx3ACp68HjQXUN9pblw6TpMksZadIQPylen9mLsQQaAyopbbZbgLUpzd6QWZs2vfGY9D6FtzMIgxGi-2VObdu_WrVgBaBGw-22cu4QSCcNKKYvSmenxo_LILx3iOuECMTKleGiOH1O76_37ePuIhUmtRh8PBKh7IGwGi-t0XrG3zgv8hQA_mvRhFPH_yD3h-G82NMZBXqanLTo0Uo-1lM5ziOg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Cafe o Late</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-full"><a class="px-space-sm py-space-xs rounded-full text-on-surface-variant font-label-lg text-label-lg transition-colors hover:text-on-surface" data-path="our-roastery" href="#">Our Roastery</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container-high text-primary font-semibold rounded-full" data-path="artisanal-menu" href="#">Artisanal Menu</a><a class="px-space-sm py-space-xs rounded-full text-on-surface-variant font-label-lg text-label-lg transition-colors hover:text-on-surface" data-path="seasonal-blends" href="#">Seasonal Blends</a><a class="px-space-sm py-space-xs rounded-full text-on-surface-variant font-label-lg text-label-lg transition-colors hover:text-on-surface" data-path="rewards-and-stars" href="#">Rewards &amp; Stars</a><a class="px-space-sm py-space-xs rounded-full text-on-surface-variant font-label-lg text-label-lg transition-colors hover:text-on-surface" data-path="find-a-cafe" href="#">Find a Café</a></nav></div><div class="flex items-center gap-space-sm"><a class="hidden md:inline-flex items-center text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="find-a-cafe" href="#"><span class="material-symbols-outlined text-[18px] mr-space-xxs text-caramel-roast">near_me</span><span>Store Hours &amp; Location</span></a><a class="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-xs py-space-xxs transition-colors" data-path="sign-in" href="#">Sign In</a><a class="inline-flex items-center justify-center bg-espresso-rich text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full shadow-[0_4px_12px_rgba(30,57,50,0.2)] hover:bg-primary transition-all active:scale-[0.97]" data-path="order-ahead" href="#">Order Ahead</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(0.5deg); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes steamDrift {
+      0% { transform: translateY(0) scaleX(1); opacity: 0; }
+      40% { opacity: 0.5; }
+      80% { transform: translateY(-30px) scaleX(1.3); opacity: 0.2; }
+      100% { transform: translateY(-44px) scaleX(1.6); opacity: 0; }
+    }
+    .anim-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+    .anim-pulse-slow {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+    .steam-line-1 {
+      animation: steamDrift 3.5s infinite ease-out;
+    }
+    .steam-line-2 {
+      animation: steamDrift 4.2s infinite 1.2s ease-out;
+    }
+    .steam-line-3 {
+      animation: steamDrift 3.8s infinite 2s ease-out;
+    }
+  </style>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface-container-low px-gutter-mobile md:px-gutter-desktop py-space-2xl md:py-space-3xl">
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-latte-amber/10 blur-3xl pointer-events-none anim-pulse-slow"></div>
+<div class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Column: Editorial Copy -->
+<div class="lg:col-span-6 flex flex-col items-start space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xxs rounded-full text-secondary font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-latte-amber" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+<span>Artisanal Roastery &amp; Craft Café</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight leading-tight">
+          Every Cup Tells a <span class="italic font-display-lg text-caramel-roast">Slower</span> Story.
+        </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant leading-relaxed max-w-xl">
+          Ethically harvested micro-lot beans, gently drum-roasted each morning in our sunlit London roastery. Finished with velvety organic oat micro-foam and deliberate, hand-poured precision.
+        </p>
+<!-- CTA Row -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto">
+<a class="group relative inline-flex items-center justify-center gap-space-xs bg-espresso-rich text-on-primary font-label-lg text-label-lg px-space-xl py-space-sm rounded-full shadow-[0_10px_25px_-5px_rgba(30,57,50,0.3)] hover:bg-primary transition-all duration-300 active:scale-95" href="#menu">
+<span>Explore Today's Menu</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface text-espresso-rich font-label-lg text-label-lg px-space-lg py-space-sm rounded-full shadow-sm hover:bg-surface-container transition-all duration-200 active:scale-95" href="#roasters-craft">
+<span class="material-symbols-outlined text-[18px] text-caramel-roast">table_restaurant</span>
+<span>Reserve a Table</span>
+</a>
+</div>
+<!-- Metric micro-strip -->
+<div class="grid grid-cols-3 gap-space-md pt-space-lg w-full max-w-md">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Direct Trade</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">18 hr</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Cold Steeped</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">24 hr</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Roast Freshness</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Visual Frame -->
+<div class="lg:col-span-6 relative flex justify-center items-center">
+<!-- Ambient glow backdrop -->
+<div class="absolute inset-4 rounded-[2.5rem] bg-gradient-to-tr from-latte-amber/20 via-primary-container/10 to-transparent blur-2xl"></div>
+<!-- Main Media Frame -->
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[2rem] overflow-hidden shadow-[0_20px_45px_-10px_rgba(27,38,29,0.22)] bg-surface-container">
+<img alt="Sunlit artisanal cafe interior with baristas handcrafting espresso and patrons sitting by arch windows" class="w-full h-full object-cover transform scale-[1.02] hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASN2TPn5CfC2zBJokR6lSAN3JaZ2o2J1i6AhHEsocQB4gJ2RJhnK7UhlO3ArP3Jqk426QuHLaUv0YXGcbQsCp2TKwH4DhR8MRJQIyS9NioYoLkNd-5UKeg5yAdhiN3jdI5nVF4Gz7a1hVCqJj8N4Ymrp4pbOf14bSOHft4u4wM2x4H6nY6N23b3fb4ZIpez6k2l2N9ViY7CiZhOe0DHmStkPDalpN2ef7zOyy7HJSKznx0bItjsQbG"/>
+<!-- Steam graphic overlay -->
+<div class="absolute bottom-16 right-16 pointer-events-none w-20 h-24 flex items-end justify-center space-x-1.5 opacity-70">
+<span class="w-1.5 h-10 bg-surface-bright/70 rounded-full blur-[1px] steam-line-1"></span>
+<span class="w-1.5 h-14 bg-surface-bright/80 rounded-full blur-[1px] steam-line-2"></span>
+<span class="w-1 h-8 bg-surface-bright/60 rounded-full blur-[1px] steam-line-3"></span>
+</div>
+<!-- Bottom Gradient Scrim for Contrast -->
+<div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-4 left-5 text-on-primary text-label-sm font-label-sm uppercase tracking-widest flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-latte-amber animate-ping"></span>
+<span>Live Roastery • Open Today till 7:00 PM</span>
+</div>
+</div>
+<!-- Floating Badge 1: Rating -->
+<div class="anim-float absolute -top-4 -left-2 sm:-left-6 bg-surface/95 backdrop-blur-md px-space-md py-space-xs rounded-2xl shadow-[0_12px_30px_-5px_rgba(27,38,29,0.18)] flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold">
+<span class="material-symbols-outlined text-[20px] text-caramel-roast" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">4.9</span>
+<span class="font-label-sm text-label-sm text-caramel-roast">★★★★★</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">2,400+ coffee purists</p>
+</div>
+</div>
+<!-- Floating Badge 2: Barista Daily Special -->
+<div class="anim-float absolute -bottom-5 -right-2 sm:-right-4 bg-primary text-on-primary p-space-sm sm:px-space-md sm:py-space-sm rounded-2xl shadow-[0_16px_35px_-8px_rgba(7,35,29,0.35)] flex items-center gap-space-sm max-w-xs">
+<div class="w-10 h-10 shrink-0 rounded-xl bg-primary-container flex items-center justify-center text-latte-amber">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-latte-amber uppercase tracking-wider">Today's Special</p>
+<p class="font-body-sm text-body-sm font-semibold truncate text-surface-bright">Honey Lavender Oat Latté</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sensory Feature Highlights (Interactive Cards) -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter-mobile md:px-gutter-desktop py-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<div class="group bg-surface-container rounded-2xl p-space-lg shadow-sm hover:shadow-[0_12px_30px_-4px_rgba(27,38,29,0.12)] transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-md transition-colors group-hover:bg-espresso-rich group-hover:text-surface-bright">
+<span class="material-symbols-outlined text-[26px]">eco</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-caramel-roast font-semibold mb-space-xxs">Origin Traceability</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Single-Origin Sourcing</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Direct partnership with organic family estates in Huila (Colombia) and Yirgacheffe (Ethiopia), guaranteeing equitable wages and rare harvest varietals.
+        </p>
+<div class="mt-space-md flex items-center gap-1 font-label-md text-label-md text-espresso-rich font-semibold">
+<span>Read harvest dossier</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container rounded-2xl p-space-lg shadow-sm hover:shadow-[0_12px_30px_-4px_rgba(27,38,29,0.12)] transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-space-md transition-colors group-hover:bg-secondary group-hover:text-surface-bright">
+<span class="material-symbols-outlined text-[26px]">mode_heat</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-caramel-roast font-semibold mb-space-xxs">Daily Roast Lab</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Cast-Iron Drum Roasting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Calibrated slow drum curves coax sweet caramelization without scorch. Every 5kg micro-batch is cupped, profiled, and stamped with exact roast dates.
+        </p>
+<div class="mt-space-md flex items-center gap-1 font-label-md text-label-md text-espresso-rich font-semibold">
+<span>View roast curves</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container rounded-2xl p-space-lg shadow-sm hover:shadow-[0_12px_30px_-4px_rgba(27,38,29,0.12)] transition-all duration-300 transform hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary mb-space-md transition-colors group-hover:bg-espresso-rich group-hover:text-surface-bright">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-caramel-roast font-semibold mb-space-xxs">Micro-Foam Mastery</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Velvet Micro-Foam</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Silky steamed organic oat and grass-fed whole milk textured to precisely 62°C, balancing espresso crema with nuanced, hand-poured botanical latte art.
+        </p>
+<div class="mt-space-md flex items-center gap-1 font-label-md text-label-md text-espresso-rich font-semibold">
+<span>Our milk craft</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Interactive Cafe Menu Section -->
+<section class="w-full bg-surface py-space-2xl md:py-space-3xl px-gutter-mobile md:px-gutter-desktop" id="menu">
+<div class="max-w-[1200px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed px-space-sm py-space-xxs rounded-full font-label-sm text-label-sm uppercase tracking-wider mb-space-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Handcrafted Daily</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">
+            The Cafe o Late Menu
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Carefully curated single-origin espressos, botanical cold brews, and oven-fresh laminates.
+          </p>
+</div>
+<!-- Filter Pill Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 scrollbar-none" id="menu-filter-bar">
+<button class="menu-tab-btn active px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-espresso-rich text-on-primary shadow-sm" data-filter="all">
+            All Creations
+          </button>
+<button class="menu-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-primary" data-filter="espresso">
+            Espresso &amp; Lattes
+          </button>
+<button class="menu-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-primary" data-filter="coldbrew">
+            Cold Brews
+          </button>
+<button class="menu-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-primary" data-filter="tea">
+            Artisanal Teas
+          </button>
+<button class="menu-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-primary" data-filter="bakery">
+            Bakery &amp; Bites
+          </button>
+</div>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg" id="menu-items-grid">
+<!-- Item 1: Signature Spanish Honey Latte -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="espresso">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Bestseller</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$6.25</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Spanish Honey Latté</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Double ristretto pulled over sweet condensed milk, wild clover honey, steamed whole milk, and crushed Ceylon cinnamon dust.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Sweet Spice</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Double Shot</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">12oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">16oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Cardamom Oat Milk Cortado -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="espresso">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Staff Pick</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$5.50</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Cardamom Oat Cortado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Equal parts rich espresso and silky steamed oat milk infused with freshly crushed green Guatemalan cardamom pods.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Vegan</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Botanical</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">5oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">8oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Pistachio Rose Cloud Cold Brew -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="coldbrew">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Seasonal</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$6.75</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Pistachio Rose Cloud</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              20-hour Ethiopian cold brew topped with aerated pistachio sweet foam and crushed organic Persian rose petals.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cold Foam</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Floral &amp; Nutty</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">16oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">20oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Velvet Caramel Macchiato -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="espresso">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Classic</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$6.25</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Velvet Caramel Macchiato</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Madagascar bourbon vanilla bean syrup, steamed micro-foam, slow-marked ristretto shots, and deep amber burnt caramel drizzle.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">House Syrup</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Layered</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">12oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">16oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Ceremonial Matcha Lavender Latte -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="tea">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Uji Origin</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$6.50</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Matcha Lavender Latté</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              First-harvest stone ground Uji green tea, steeped French culinary lavender blossom, and silky oat milk foam.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Antioxidant</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Calming</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">12oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">16oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Golden Turmeric Ginger Elixir -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="tea">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Caffeine-Free</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$5.75</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Golden Ginger Elixir</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Cold-pressed Peruvian ginger root, wild organic turmeric, black tellicherry pepper, steamed almond milk, raw honeycomb.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Immunity</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Holistic</span>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Size</span>
+<div class="inline-flex bg-surface-container rounded-full p-0.5">
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">12oz</button>
+<button class="size-btn px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-primary">16oz</button>
+</div>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Customize &amp; Add</span>
+</button>
+</div>
+</div>
+<!-- Item 7: Brown Butter Sea Salt Croissant -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="bakery">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Morning Bake</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$4.75</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Brown Butter Croissant</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Flaky 72-layer laminated pastry baked with Normandy brown butter and finished with hand-harvested Maldon sea salt crystals.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Warm Service</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Vegetarian</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Preparation</span>
+<span class="font-label-sm text-label-sm text-caramel-roast font-semibold">Warmed in Hearth</span>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Tray</span>
+</button>
+</div>
+</div>
+<!-- Item 8: Cardamom Morning Bun -->
+<div class="menu-card bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_12px_28px_-6px_rgba(27,38,29,0.12)] transition-all flex flex-col justify-between" data-category="bakery">
+<div class="p-space-lg flex-1 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">House Favorite</span>
+<span class="font-headline-sm text-headline-sm text-espresso-rich font-bold">$5.25</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xxs">Cardamom Morning Bun</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-relaxed mb-space-md">
+              Slow-fermented brioche swirl dusted with fragrant cardamom sugar crystals and fresh Seville orange zest aromatics.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Citrus Swirl</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Limited Batch</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Preparation</span>
+<span class="font-label-sm text-label-sm text-caramel-roast font-semibold">Crispy Sugar Rim</span>
+</div>
+</div>
+<div class="px-space-lg pb-space-lg">
+<button class="order-add-btn w-full py-space-xs bg-espresso-rich text-on-primary rounded-full font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Tray</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Roaster's Craft Feature Band -->
+<section class="w-full bg-primary-container text-on-primary py-space-3xl px-gutter-mobile md:px-gutter-desktop relative overflow-hidden" id="roasters-craft">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-tertiary-container/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Roast Data & Tasting Profiles -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div class="inline-flex items-center gap-2 px-space-md py-space-xxs rounded-full bg-primary text-latte-amber font-label-sm text-label-sm uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-latte-amber"></span>
+<span>Roaster In-Session • Drum #02</span>
+</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-surface-bright leading-tight">
+          Huila Geisha Reserve <span class="italic text-latte-amber">Lot #14</span>
+</h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-primary-container leading-relaxed">
+          Grown at 1,950 meters in volcanic soil. Roasted on our restored 1968 Probat cast-iron drum with an extended yellowing phase to preserve delicate jasmine blossoms and sweet bergamot acidity.
+        </p>
+<!-- Sensory Tasting Scale Bars (Visual richness) -->
+<div class="space-y-space-sm pt-space-xs">
+<div>
+<div class="flex justify-between font-label-md text-label-md text-surface-bright mb-1">
+<span>Floral Acidity (Jasmine, Bergamot)</span>
+<span class="text-latte-amber">92%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-latte-amber rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md text-surface-bright mb-1">
+<span>Honey Sweetness (Panela, Nectarine)</span>
+<span class="text-latte-amber">88%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-caramel-roast rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md text-surface-bright mb-1">
+<span>Silky Body (Tea-Like Texture)</span>
+<span class="text-latte-amber">76%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-latte-amber/70 rounded-full" style="width: 76%;"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="px-space-lg py-space-sm bg-latte-amber text-tertiary rounded-full font-label-lg text-label-lg font-bold hover:bg-caramel-roast hover:text-surface-bright transition-colors active:scale-95 shadow-md">
+            Purchase Fresh Whole Bean (250g)
+          </button>
+<span class="font-label-md text-label-md text-on-primary-container">£18.50 • Whole Bean or Ground</span>
+</div>
+</div>
+<!-- Right: Live Roast Telemetry Card -->
+<div class="lg:col-span-5 bg-primary/80 backdrop-blur-md p-space-xl rounded-3xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.4)]">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-latte-amber font-semibold">Live Telemetry</div>
+<div class="font-headline-sm text-headline-sm text-surface-bright">Drum Roast Curve</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-espresso-rich text-surface-bright font-label-xs text-[11px] font-mono">CRV-204</span>
+</div>
+<!-- Inline SVG Telemetry Graph -->
+<div class="w-full h-40 relative flex items-center justify-center mb-space-md">
+<svg class="w-full h-full text-latte-amber" fill="none" viewbox="0 0 320 140" xmlns="http://www.w3.org/2000/svg">
+<path d="M 0,120 Q 50,115 100,85 T 200,45 T 320,18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 0,120 Q 50,115 100,85 T 200,45 T 320,18 L 320,140 L 0,140 Z" fill="currentColor" fill-opacity="0.12"></path>
+<!-- Target Markers -->
+<circle cx="100" cy="85" fill="#ffffff" r="4" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="200" cy="45" fill="#ffffff" r="4" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="300" cy="22" fill="#fdbd6e" r="5" stroke="#1b261d" stroke-width="2"></circle>
+<text fill="#cba258" font-family="sans-serif" font-size="10" x="90" y="75">Yellow 165°C</text>
+<text fill="#cba258" font-family="sans-serif" font-size="10" x="180" y="35">1st Crack 198°C</text>
+<text fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold" x="260" y="15">Drop 208°C</text>
+</svg>
+</div>
+<!-- Telemetry Key Stats -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-on-primary-container font-body-sm text-body-sm">
+<div class="bg-primary-container p-space-sm rounded-xl">
+<span class="block text-label-sm font-label-sm text-latte-amber">Development Ratio</span>
+<span class="text-surface-bright font-semibold font-mono text-body-md">14.8% • City+</span>
+</div>
+<div class="bg-primary-container p-space-sm rounded-xl">
+<span class="block text-label-sm font-label-sm text-latte-amber">Batch Dispatch</span>
+<span class="text-surface-bright font-semibold font-mono text-body-md">Today 08:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Loyalty & Mobile Order Perk Strip -->
+<section class="w-full bg-surface-container py-space-2xl px-gutter-mobile md:px-gutter-desktop">
+<div class="max-w-[1200px] mx-auto bg-surface rounded-3xl p-space-xl md:p-space-2xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<!-- Left Loyalty Perk -->
+<div class="flex items-start gap-space-md max-w-xl">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[32px] text-caramel-roast" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-caramel-roast font-semibold">Cafe o Late Club</div>
+<h3 class="font-headline-md text-headline-md text-primary">Earn 2 Stars per $1 Spent</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Redeem points on order ahead pickups for limited-run reserve beans, artisanal syrups, or complimentary oat cortados.
+          </p>
+</div>
+</div>
+<!-- Right Action & Interactive Star Progress -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full md:w-auto shrink-0">
+<div class="flex items-center gap-2 bg-surface-container px-space-md py-space-sm rounded-2xl">
+<div class="flex -space-x-1 text-latte-amber">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] text-outline-variant">star</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">150 Stars for Free Brew</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-espresso-rich text-on-primary font-label-lg text-label-lg px-space-xl py-space-sm rounded-full shadow-[0_4px_16px_rgba(30,57,50,0.2)] hover:bg-primary transition-all active:scale-95" data-path="order-ahead" href="#">
+<span>Join Free &amp; Order Ahead</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom-Right Quick Order Floating Button -->
+<div class="fixed bottom-6 right-6 z-40">
+<button class="group flex items-center gap-space-xs bg-espresso-rich text-on-primary pl-space-md pr-space-lg py-space-sm rounded-full shadow-[0_12px_32px_rgba(7,35,29,0.35)] hover:bg-primary transition-all duration-300 active:scale-95" id="floating-quick-order">
+<div class="relative w-8 h-8 rounded-full bg-latte-amber text-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-error text-on-error rounded-full text-[10px] flex items-center justify-center font-bold" id="cart-counter">0</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-latte-amber uppercase leading-none">Your Tray</span>
+<span class="font-label-md text-label-md font-bold text-surface-bright leading-tight">Review Order</span>
+</div>
+</button>
+</div>
+<!-- Client-Side Micro-Interactions Script -->
+<script>
+    (function() {
+      // Menu Category Filter tabs
+      const filterButtons = document.querySelectorAll('.menu-tab-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active styles from all
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-espresso-rich', 'text-on-primary', 'shadow-sm');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+
+          // Add active style to selected
+          btn.classList.add('bg-espresso-rich', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+          const filter = btn.getAttribute('data-filter');
+          menuCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Quick Size Button Toggle within cards
+      const sizeBtns = document.querySelectorAll('.size-btn');
+      sizeBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const parent = this.parentElement;
+          parent.querySelectorAll('.size-btn').forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          this.classList.add('bg-primary', 'text-on-primary');
+          this.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // Add to Cart Counter animation
+      let count = 0;
+      const counterEl = document.getElementById('cart-counter');
+      const orderButtons = document.querySelectorAll('.order-add-btn');
+
+      orderButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          count++;
+          if (counterEl) {
+            counterEl.textContent = count;
+            counterEl.classList.add('scale-125');
+            setTimeout(() => counterEl.classList.remove('scale-125'), 200);
+          }
+          const originalText = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined text-[16px] text-latte-amber">done</span><span>Added to Tray</span>';
+          this.classList.add('bg-primary');
+          setTimeout(() => {
+            this.innerHTML = originalText;
+            this.classList.remove('bg-primary');
+          }, 1400);
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="max-w-[1200px] mx-auto px-gutter-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl border-b border-primary"><div class="lg:col-span-4 space-y-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-surface-bright">Cafe o Late</span><span class="font-label-sm text-label-sm uppercase text-latte-amber px-space-xs py-space-xxs rounded bg-tertiary-container">Roastery &amp; Craft</span></div><p class="font-body-md text-body-md text-on-primary-container leading-relaxed">Artisanal micro-lot roasting grounded in intentional sourcing, traditional brass craftsmanship, and slow-pour brewing. Every cup preserves the origin of single-estate harvests.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="flex items-center font-label-md text-label-md text-latte-amber"><span class="material-symbols-outlined text-[16px] mr-space-xxs">eco</span>Fair Trade Organic</span><span class="flex items-center font-label-md text-label-md text-latte-amber"><span class="material-symbols-outlined text-[16px] mr-space-xxs">local_fire_department</span>Small-Batch Drum</span></div></div><div class="lg:col-span-2 space-y-space-sm"><div class="font-headline-sm text-headline-sm text-surface-bright">Heritage</div><ul class="space-y-space-xs"><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="our-roastery" href="#">The Roastery Story</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="sourcing-ethics" href="#">Sourcing Ethics</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="seasonal-blends" href="#">Micro-Lot Reserves</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="artisanal-menu" href="#">Barista Brew Guides</a></li></ul></div><div class="lg:col-span-2 space-y-space-sm"><div class="font-headline-sm text-headline-sm text-surface-bright">Visit Us</div><ul class="space-y-space-xs"><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="find-a-cafe" href="#">Flagship Roastery</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="find-a-cafe" href="#">Boutique Espresso Bars</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="find-a-cafe" href="#">Tasting Room Hours</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="order-ahead" href="#">Curbside Pick-up</a></li></ul></div><div class="lg:col-span-4 space-y-space-md"><div class="font-headline-sm text-headline-sm text-surface-bright">Fresh Roast Bulletin</div><p class="font-body-sm text-body-sm text-on-primary-container">Subscribe to weekly cupping alerts, limited micro-lot drops, and invitations to intimate barista workshops.</p><form class="flex flex-col sm:flex-row gap-space-xs"><input class="flex-1 px-space-md py-space-xs bg-primary text-surface-bright placeholder:text-on-primary-container/70 rounded-full border border-on-primary-container/30 focus:outline-none focus:border-latte-amber text-body-sm font-body-sm" placeholder="Enter your email" type="email"/><button class="px-space-md py-space-xs rounded-full bg-latte-amber text-tertiary font-label-md text-label-md hover:bg-caramel-roast transition-colors" type="button">Subscribe</button></form><span class="font-label-sm text-label-sm text-on-primary-container/80">Zero spam. Unsubscribe at any time.</span></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-on-primary-container"><p class="font-body-sm text-body-sm">© 2024 Cafe o Late Roasters Inc. Handcrafted with reverence for the harvest.</p><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">Privacy &amp; Cookies</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="terms-of-craft" href="#">Terms of Craft</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-surface-bright transition-colors" data-path="accessibility" href="#">Accessibility</a></div></div></div></footer></body></html>
