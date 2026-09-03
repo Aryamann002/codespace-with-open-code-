@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const links = ['Our Roastery', 'Artisanal Menu', 'Seasonal Blends', 'Rewards & Stars', 'Find a Cafe'];
+const links = ['Our Roastery', 'Artisanal Menu', 'Seasonal Blends', 'Rewards & Stars'];
 
 export default function Header({ onMenuToggle }) {
   const [active, setActive] = useState('Artisanal Menu');
@@ -18,7 +18,7 @@ export default function Header({ onMenuToggle }) {
           </a>
           <nav className="desktop-nav" aria-label="Main navigation">
             {links.map((link) => (
-              <a key={link} className={active === link ? 'active' : ''} href={link === 'Artisanal Menu' ? '#menu' : '#top'} onClick={() => setActive(link)}>{link}</a>
+              <a key={link} className={active === link ? 'active' : ''} href={link === 'Artisanal Menu' ? '#menu' : link === 'Seasonal Blends' ? '#seasonal-blends' : link === 'Rewards & Stars' ? '#rewards' : '#top'} onClick={() => setActive(link)}>{link}</a>
             ))}
           </nav>
         </div>

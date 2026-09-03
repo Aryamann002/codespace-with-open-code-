@@ -3,9 +3,8 @@
 const links = [
   ['⌂', 'Our Roastery', '#top'],
   ['☕', 'Artisanal Menu', '#menu'],
-  ['✦', 'Seasonal Blends', '#top'],
-  ['★', 'Rewards & Stars', '#top'],
-  ['⌖', 'Find a Cafe', '#visit'],
+  ['✦', 'Seasonal Blends', '#seasonal-blends'],
+  ['★', 'Rewards & Stars', '#rewards'],
 ];
 
 export default function Sidebar({ open, onClose }) {
